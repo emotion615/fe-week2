@@ -1,11 +1,12 @@
-// import ColorCard from "./component/ColorCard";
-// import TextBox from "./component/Text";
+import ColorCard from "./component/ColorCard";
+import TextBox from "./component/Text";
 import MediaCard from "./component/MediaCard";
 
 function App() {
   return (
     <>
-      {/* <TextBox color="red" fontweight="400" fontsize="30px">
+      {/*
+      <TextBox color="red" fontweight="400" fontsize="30px">
         박서정
       </TextBox>
       <TextBox color="black" fontweight="300" fontsize="16px">
@@ -16,13 +17,16 @@ function App() {
       </TextBox>
       <TextBox color="pink" fontweight="200" fontsize="50px">
         박서정
-      </TextBox> */}
-      {/* 
+      </TextBox>
+      */}
+      {/*
       <ColorCard color="pink" />
       <ColorCard color="purple" />
       <ColorCard color="black" />
       <ColorCard color="#1E82CD" />
-      <ColorCard color="yellow" /> */}
+      <ColorCard color="yellow" />
+    */}
+
       <MediaCard
         backgroundimage="https://cdn.pixabay.com/photo/2014/09/26/04/59/holiday-complex-461633_960_720.jpg"
         title="Heading"

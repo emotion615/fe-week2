@@ -7,7 +7,7 @@ const CardWrapper = styled.div`
   height: 430px;
   border: 1px black solid;
   border-radius: ${(props) =>
-    props.border_radius ? props.border_radius : "10%"}; //
+    props.border_radius ? props.border_radius : "10%"};
 `;
 
 const ColorWrapper = styled.div`
@@ -18,12 +18,11 @@ const ColorWrapper = styled.div`
     props.border_radius ? props.border_radius : "10%"};
   border-top-right-radius: ${(props) =>
     props.border_radius ? props.border_radius : "10%"};
-  //
 `;
 
 const ColorCard = (props) => {
   return (
-    <CardWrapper border_radius="40px">
+    <CardWrapper border_radius="10px">
       <ColorWrapper color={props.color} border_radius="10px" />
       <TextBox color={props.color} fontsize="50px" textalign="center">
         {props.color}

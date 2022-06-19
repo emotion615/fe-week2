@@ -1,71 +1,50 @@
-# 멋쟁이 사자처럼 10기 FE 2주차 과제 🦁
+# Week 2 review
 
-반갑습니다 여러분!!☺️ 
-2주차부터 약 4주간 함께 진행할 10기 운영진 이성인입니다 ☺️ 
-react는 크게 어렵지 않습니다! 다같이 열심히 하시죠 ㅎㅎ
+## 실습 1>
 
-# 실습 진행방법 
-기존의 실습들과 동일하게 진행됩니다
- - 이 레포를 fork 한다!
- - fork하여 이동한 자신의 레포에서 깃크라켄을 통해 클론을 받습니다.
- - 클론을 받은 파일을 vs 코드에서 엽니다!
- - vs 코드에서 터미널을 열어서 npm run start 를 입력하면 코드가 실행됩니다!
- 
-이번 실습은 3차에 걸쳐서 진행됩니다! 마지막까지 열심히 진행해보시죠 ㅎㅎ 
+### -실습 1번의 과제는 Text 컴포넌트를 수정하는 문제였습니다.</br>
 
-# 실습 1번문제
- 여러분은 프론트 엔드 작업을 진행하시면서 글자에 효과를 어떻게 주셨나요? 매번 id, class를 통해서 받지 않으셨나요?
- Text 컴포넌트를 수정하며 다양한 순간에 재사용성이 뛰어난 코드를 만들어봅시다!
+<br>다음 사진과 같이 const StyledText의 margin, font-size,color, font-weight, text-align을 props 주어 재사용성이 가능하도록 코드를 짜 보았습니다.</br>
 
-### 제한조건 
- - text-weight , text-size 를 props를 통해서 입력받아서 수정합니다. 
- 
-ex) <br>
-<img width="538" alt="image" src="https://user-images.githubusercontent.com/77886826/166138795-c60b1f82-9cd7-47fb-835a-04c6e0a4b02b.png"><br>
-현재 상태입니다.<br>
-<img width="663" alt="image" src="https://user-images.githubusercontent.com/77886826/166138831-708166b3-5251-4956-ba19-f617085ce97e.png"><br>
-다음과 같이 입력받을 때 font-weight, font-size 등이 수정되도록 바꾸어 주세요
+<img width="60%" src="https://user-images.githubusercontent.com/102964287/174475395-946a16fc-555d-433e-ac7a-ab7c9e4fe923.png"/>
 
+<br>-App.js에는 ./component/Text에서의 TextBox를 불러와 color, fontweight,fontsize를 "박서정"에 각각 적용되도록 지정해주었습니다.</br>
 
-# 실습 2번문제 
- 색상코드를 입력하면 색상과 text가 나오는 카드를 만들어봅시다! 제한된 조건 속에서 진행해 주시길 바랍니다!!
- <img width="366" alt="image" src="https://user-images.githubusercontent.com/77886826/166141001-f3964a02-e290-4a8f-bc6e-ce94962f1b36.png">
-<br>현재 사진입니다! 아래와 같게 만들어주세요!
- ### 목표)
-<img width="314" alt="image" src="https://user-images.githubusercontent.com/77886826/166140624-39232d3e-becb-45c9-826c-e42b3698f61e.png">
-<img width="336" alt="image" src="https://user-images.githubusercontent.com/77886826/166140681-4c28bf65-0107-4aae-989e-be71e8e176b5.png">
-<img width="335" alt="image" src="https://user-images.githubusercontent.com/77886826/166140718-0a4599f1-6b4b-4048-8239-685a207fc5f1.png">
-<img width="396" alt="image" src="https://user-images.githubusercontent.com/77886826/166140696-26ece472-220b-450f-90cf-37ac346ee8de.png">
-<br>
-다음과 같이 입력 받습니다.
+<img width="60%" src="https://user-images.githubusercontent.com/102964287/174475471-86a0580b-a866-4fe0-9641-e6b06aa3362f.png">
 
-### 제한조건 
+<br>-실행결과 다음과 같이 각각의 "박서정"이 화면상에 나타났습니다. color,fontweight, fontsize를 다르게 나타남을 확인할 수 있습니다.</br>
 
- - 빈칸을 채워 다음 사진과 같게 구현합니다!
- - ColorCard들 사이 간격은 10px 로 합니다.
- - ColorCard를 서로다른 props를 통해서 5개 이상 화면에 출력합니다.
+<img width="60%" src="https://user-images.githubusercontent.com/102964287/174475558-154bf10f-5778-4b43-84f2-f5c5896486ac.png"/>
 
+## 실습 2>
 
-# 실습 3번문제
- 대망의 끝판왕 MediaCard 컴포넌트를 제작합니다!
- 무슨 방법을 사용하셔도 괜찮습니다. 최선을 다해서 사진과 유사한 미디어 카드를 만들어주세요! FE는 필수소양은 디자인을 완벽하게 같게 구사하는 능력입니다.<br>
- <img width="668" alt="image" src="https://user-images.githubusercontent.com/77886826/166138976-2db612eb-7b7a-4a7c-882a-3199b9d55ab7.png">
+### -실습 2번의 과제는 CardWrapper와 ColorWrapper를 각각 지정해준 후 색상코드를 입력하면 색상과 text가 나오는 카드를 만들어보는 문제였습니다.</br>
 
-요런 컴포넌트를 만들어 주세요! 
+<br> 다음 사진과 같이 CardWrapper와 ColorWrapper에 관한 내용을 props 주고 글자는 실습1에서 사용한 TextBox를 사용하였습니다.
+<br>- CardWrapper의 경우 border-radius만 props주고 나머지는 고정하였습니다.
+<br> - ColorWrapper는 height와 broder만 고정해두고 나머지는 props해주었습니다.</br>
 
-### 제한조건 
- - styled-component 를 이용합니다.
- - 사진의 1번은 url을 props 로 입력받습니다.
- - 사진의 2번은 미디어카드의 제목입니다. props를 통해 입력받습니다.
- - 사진의 3번은 미디어 카드의 내용입니다. props를 통해 입력받습니다.
- - 사진의 4번은 미디어 카드의 버튼의 색 입니다. props를 통해 입력받습니다.
- - 서로 다른 props를 입력받은 미디어 카드를 최소 5개 이상 만듭니다.
+<img width="60%" src="https://user-images.githubusercontent.com/102964287/174475878-68de1881-7a83-4f10-88dc-ae87cc5664ae.png"/>
 
-# 제출시 필수 사항
-- 실습 모든 문제를 포함합니다.
-- 실습의 각 문제마다 스크린샷을 포함합니다.
-- pr 의 제목은 | [내이름] 제목 |으로 합니다.
-ex) [이성인] 리엑트는 너무 재밋어!
+<br> 위에서 지정해준 CardWrapper와 ColorWrapper,Text박스를 ColorCard속에 적어두어 App.js에서는 ColorCard만 이용하여 각각의 카드를 변경시키도록 합니다.</br>
 
+<img width="60%" src="https://user-images.githubusercontent.com/102964287/174475941-6aa31b22-78a4-471d-bc78-94123a5324ba.png"/>
 
+<br> 다음은 결과값입니다.</br>
+<img width="60%" src="https://user-images.githubusercontent.com/102964287/174475963-cea2e355-aecb-42a5-8ed3-9f2132d0d3b6.png"/>
 
+## 실습 3>
+
+### -대망의 실습 3!! 실습 3번에서는 Media Card 컴포넌트를 제작했습니다. 카드 각각의 사진과 Text, Button의 색상은 달리하는 조건이었습니다.
+
+<br> 다음 사진과 같이 StyledCardWrapper, StyledImage, TextBox,StyledButton Mediacard로 한 번에 묶어서 나타낸 걸 볼 수 있습니다. </br>
+<br> App.js에서는 실습1,2와 마찬가지로 MediaCard에 적을 내용들, 사진(URL)이용하여 각각의 미디어 카드를 만들어 주었다. </br>
+
+<br>-tip) 이번에는 각각의 요소들을 index.js를 만들어서 적어줘서 "import ... from ../.."가 많았는데 하나의 index.js를 만들어서 한번에 적으면 귀찮음을 덜 수 있다는 것을 깨달았다...</br>
+
+<img width="100%" src="https://user-images.githubusercontent.com/102964287/174476440-fa390363-4c51-4f57-925f-1f53637e2fb4.png"/>
+
+<br> 다음과 같이 나온다!!! 두두둥 </br>
+<br> 사실 사진이 카드만 나오고 사진이 안나와서 시간이 오래걸렸다.ㅜㅜ</br>
+그리고 MediaCard를 만들면서 사진이나 Text, Button사이에 간격을 조절하고 싶어서 Margin에 props를 줘서 가능하도록 해주었다 ⭐⭐
+<img width="60%" src="https://user-images.githubusercontent.com/102964287/174476729-bdb304c0-f160-48d8-907e-85be43a2a881.png"/>
